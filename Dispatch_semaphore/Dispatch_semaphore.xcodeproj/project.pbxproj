@@ -13,6 +13,7 @@
 		0B757BAE21A7D57600239C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B757BAD21A7D57600239C54 /* Assets.xcassets */; };
 		0B757BB121A7D57600239C54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B757BAF21A7D57600239C54 /* LaunchScreen.storyboard */; };
 		0B757BB421A7D57600239C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B757BB321A7D57600239C54 /* main.m */; };
+		0B757BBD21A7E47800239C54 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B757BBC21A7E47800239C54 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		0B757BB021A7D57600239C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B757BB221A7D57600239C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B757BB321A7D57600239C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B757BBB21A7E47800239C54 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		0B757BBC21A7E47800239C54 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				0B757BA521A7D57600239C54 /* AppDelegate.m */,
 				0B757BA721A7D57600239C54 /* ViewController.h */,
 				0B757BA821A7D57600239C54 /* ViewController.m */,
+				0B757BBB21A7E47800239C54 /* TableViewController.h */,
+				0B757BBC21A7E47800239C54 /* TableViewController.m */,
 				0B757BAA21A7D57600239C54 /* Main.storyboard */,
 				0B757BAD21A7D57600239C54 /* Assets.xcassets */,
 				0B757BAF21A7D57600239C54 /* LaunchScreen.storyboard */,
@@ -144,6 +149,7 @@
 				0B757BA921A7D57600239C54 /* ViewController.m in Sources */,
 				0B757BB421A7D57600239C54 /* main.m in Sources */,
 				0B757BA621A7D57600239C54 /* AppDelegate.m in Sources */,
+				0B757BBD21A7E47800239C54 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
