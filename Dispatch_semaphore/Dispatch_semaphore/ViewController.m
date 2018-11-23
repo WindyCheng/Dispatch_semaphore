@@ -179,9 +179,9 @@
 
 //接下来我解释一下多网络请求信号量理解：
 - (void)dispatchSignalMutil{
-    dispatch_group_t group = dispatch_group_create();
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    dispatch_group_t group = dispatch_group_create();     //创建线程组
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);   //创建队列
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);//创建信号量
     
 //    [MBProgressHUD showMessage:@"加载中..."];
     
@@ -240,9 +240,14 @@
         
     });
     
-    //刷新UI
+    
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-        NSLog(@"dispatch_group_notify");
+        
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        NSLog(@"两个请求完成后执行");
+        
+        //刷新UI
 //        [MBProgressHUD hideHUD];
         
     });
